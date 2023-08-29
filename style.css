@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.start {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  background-color: rgba(255, 148, 199, 0.33);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.start h1 {
+  font-family: "Bahiana", cursive;
+  font-size: 64px;
+  margin: 0;
+}
+
+.inicio p {
+  font-family: "Bahiana", cursive;
+}
+
+.title,
+.title2,
+.text p {
+  font-family: "Bahiana", cursive;
+}
+
+@media (max-width: 768px) {
+  .start {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .start h1 {
+    font-size: 48px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.inicio {
+  padding: 10px;
+  max-width: fit-content;
+}
+
+.inicio img {
+  max-width: 320px;
+  height: auto;
+  right: 20px;
+}
+
+.img-esquerda {
+  position: absolute;
+  bottom: -100px;
+  left: -150px;
+}
+
+.img-direita {
+  position: absolute;
+  top: -100px;
+  right: -150px;
+}
+
+.img-esquerda,
+.img-direita {
+  max-width: 100%;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+  margin: 10px;
+}
+
+.title2 {
+  text-align: left;
+  margin-bottom: 4px;
+  margin-top: 16px;
+}
+
+.text p {
+  font-size: 24px;
+}
+
+.voltar {
+  text-align: center;
+}
+
+.imagens-receitas {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#caleana-logo {
+  max-width: 120px;
+}
